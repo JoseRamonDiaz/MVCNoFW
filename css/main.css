@@ -18,3 +18,30 @@ a{
 	text-decoration:none;
 	color:#000;
 }
+
+#matInfo{
+ text-align: center;
+}
+
+#infoTable{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+#profTable{
+ margin-left: auto;
+ margin-right: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td button{
+ margin-left: 10px; 
+}
