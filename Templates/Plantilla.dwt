@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<link rel="stylesheet" href="css/main.css" />
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<h1 id="title"><a href="#">LIS FMAT</a><h1>
+<nav id="navPan">
+	<ul >
+    	<li><a href="#">Inicio</a></li>
+        <li><a href="#">Profesores</a></li>
+        <li id="busqueda"><input type="text" /><button>Buscar</button></li>
+    </ul>
+    
+</nav>
+<input type="text" /><button>Buscar</button>
+<!-- TemplateBeginEditable name="EditRegion" -->EditRegion<!-- TemplateEndEditable -->
+</body>
+</html>
