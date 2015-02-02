@@ -18,9 +18,7 @@
         <li><a href="#">Profesores</a></li>
         <li id="busqueda"><input type="text" /><button>Buscar</button></li>
     </ul>
-    
 </nav>
-<input type="text" /><button>Buscar</button>
 <!-- TemplateBeginEditable name="EditRegion" -->EditRegion<!-- TemplateEndEditable -->
 </body>
 </html>
