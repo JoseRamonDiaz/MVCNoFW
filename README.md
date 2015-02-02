@@ -1,2 +1,2 @@
 # MVCNoFW
-Aplicación web sin utilización de frameworks
+Aplicación web sin utilizar frameworks
