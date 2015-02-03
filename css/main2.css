@@ -51,3 +51,7 @@ h1 a:hover { color: #FFFCB3; }
 
 #footer { clear: both; border-top: 1px solid #ccc; padding: 20px 0; color:#808080; text-align: center;}
 #footer p { line-height: 2.5em; } 
+label{
+ display: block;
+}
+#data td{ text-align: center}
