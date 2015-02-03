@@ -55,3 +55,4 @@ label{
  display: block;
 }
 #data td{ text-align: center}
+#add{display: inline-block; margin-bottom: 25px;}
