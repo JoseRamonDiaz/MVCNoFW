@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/main2.css" type="text/css" />
+	<title>LIS FMAT</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div class="wrap">
+		<div id="logo">
+			<h1><a href="#" title="LIS FMAT">LIS FMAT</a></h1>
+			<p>Un espacio para compartir apuntes e información</p>
+		</div>
+  <ul id="nav">
+			<li><a class="current" href="#"><span class="akey">I</span>nicio</a></li>
+			<li><a href="#" ><span class="akey">P</span>rofesores</a></li>
+            <li><input type="text"><button>Buscar</button></li>
+		</ul>
+    </div>
+    <div class="wrap">
+		<div id="left">
+    <!-- TemplateBeginEditable name="EditRegion" -->EditRegion<!-- TemplateEndEditable -->
+    </div>
+    <div id="right">
+     <!-- TemplateBeginEditable name="EditRegion1" -->EditRegion<!-- TemplateEndEditable -->
+    </div>
+    
+    <div id="footer">
+			<p><a href="#">Contacto</a></p>
+		</div>
+        </div>
+</body>
+</html>
