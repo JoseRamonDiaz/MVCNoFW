@@ -1,3 +1,11 @@
+
+<?php 
+    include('model/mindex.php');
+
+    $model = new mindex();
+
+    $result = $model->getAllMaterias();
+ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/plantilla2.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -30,14 +38,12 @@
             <p>
                <a href="agregarMateria.html">Agregar materia</a>
 			<ul>
-				<li><a href="MatInfo2.html">Cálculo</a></li>
-				<li><a href="MatInfo2.html">Sistemas distribuidos</a></li>
-				<li><a href="MatInfo2.html">Álgebra</a></li>
-				<li><a href="MatInfo2.html">Microprocesadores</a></li>
-				<li><a href="MatInfo2.html">Bases de datos</a></li>
-                <li><a href="MatInfo2.html">Sistemas operativos</a></li>
-                <li><a href="MatInfo2.html">Ecuaciones diferenciales</a></li>
+                <?php 
+                    while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) { ?> 
                 
+        				<li><a href="MatInfo2.php?<?php echo $line['idMateria'] ?>"><?php echo $line['NombreMateria'] ?></a></li>
+                <?php    }
+                 ?> 
 			</ul>
             </p>
             <!-- InstanceEndEditable -->
