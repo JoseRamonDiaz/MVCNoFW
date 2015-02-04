@@ -1,3 +1,8 @@
+<?php
+    $idMaestro = $_GET["idMaestro"];
+    $idMateria = $_GET["idMateria"];
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/plantilla2.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -28,12 +33,14 @@
     <!-- InstanceBeginEditable name="EditRegion" -->
     <h2>Llena los datos del material</h2>
             <p>
-                <form action="model/AgregarArchivo.php" method="post" enctype="multipart/form-data">
+                <form action="model/GuardarArchivo.php" method="post" enctype="multipart/form-data">
                 <input type="radio" name="tipo" value="tarea">Tarea</input>
                 <input type="radio" name="tipo" value="examen">Examen</input>
-                <input type="text" value="1" name="idMaestro" hidden/>
-                <input type="text" value="1" name="idMateria" hidden/>
+                <?php
                 
+                echo "<input type='text' value='$idMaestro' name='idMaestro' hidden/>";
+                echo "<input type='text' value='$idMateria' name='idMateria' hidden/>";
+                ?>
                 <label for="nombre">Nombre: </label>
                 <input type="text" name="nombre" id="nombre"></input>
                 <label for="descripcion">Descripción: </label>

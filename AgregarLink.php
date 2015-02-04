@@ -1,3 +1,7 @@
+<?php
+    $Materia_idMateria = $_GET["Materia_idMateria"];
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/plantilla2.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -28,7 +32,7 @@
     <!-- InstanceBeginEditable name="EditRegion" -->
     <h2>Llena los datos del material</h2>
             <p>
-                <form method="get" action="model/AgregarEnlace.php">
+                <form method="get" action="model/GuardarEnlace.php">
                 <label for="anio">Año: </label>
                 <input type="number" min="2000" max="2015">
                 <label for="parcial">Parcial: </label>
@@ -37,7 +41,9 @@
                 <input type="text">
                 <label for="link">Enlace: </label>
                 <input type="text" id="link" name="link"/>
-                <input type="text" name="Materia_idMateria" value="1" hidden/>
+                <?php
+                    echo "<input type='text' name='Materia_idMateria' value='$Materia_idMateria' hidden/>";
+                ?>
                 <input type="submit">
             </form>
                 
