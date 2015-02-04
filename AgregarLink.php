@@ -33,12 +33,7 @@
     <h2>Llena los datos del material</h2>
             <p>
                 <form method="get" action="model/GuardarEnlace.php">
-                <label for="anio">Año: </label>
-                <input type="number" min="2000" max="2015">
-                <label for="parcial">Parcial: </label>
-                <input type="text">
-                <label for="descripcion">Descripción: </label>
-                <input type="text">
+                
                 <label for="link">Enlace: </label>
                 <input type="text" id="link" name="link"/>
                 <?php
