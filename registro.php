@@ -1,3 +1,6 @@
+<?php 
+    include('controller/sessionvalidateclose.php');
+ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/plantilla2.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -13,57 +16,36 @@
 
 <body>
 <div class="wrap">
-		<div id="logo">
-			<h1><a href="#" title="LIS FMAT">LIS FMAT</a></h1>
-			<p>Un espacio para compartir apuntes e información</p>
-		</div>
-  <ul id="nav">
-			<li><a class="current" href="#"><span class="akey">I</span>nicio</a></li>
-			<li><a href="#" ><span class="akey">P</span>rofesores</a></li>
-            <li><input type="text"><button>Buscar</button></li>
-		</ul>
-    </div>
+	<?php include('header.php'); ?>
     <div class="wrap">
 		<div id="left">
     <!-- InstanceBeginEditable name="EditRegion" -->
     <h2>Registro</h2>
     <p>
-    <form>
+    <form action="controller/registro.php" method="POST">
         <label for="name" >Nombre: </label>
-        <input type="text" id="name">
+        <input type="text" id="name" name="name" required>
          <label for="lastName" >Apellidos: </label>
-        <input type="text" id="lastName">
+        <input type="text" id="lastName" name="lastname" required>
          <label for="userName" >Nombre de usuario: </label>
-        <input type="text" id="userName">
+        <input type="text" id="userName" name="username" required>
         <label for="pass" >Contraseña: </label>
-        <input type="text" id="pass">
+        <input type="text" id="pass" name="password" required>
         <label for="mail" >Correo: </label>
-        <input type="text" id="mail">
+        <input type="text" id="mail" name="mail" required>
         <label for="photo" >Foto de perfil: </label>
-        <input type="file" id="photo">
-        <input type="submit">
+        <input type="submit" value="Registrarte">
     </form>
             </p>        
 	<!-- InstanceEndEditable -->
     </div>
     <div id="right">
      <!-- InstanceBeginEditable name="EditRegion1" -->
-     <h2>Materias</h2>
-			<ul>
-				<li><a href="#">Cálculo</a></li>
-				<li><a href="#">Sistemas distribuidos</a></li>
-				<li><a href="#">Álgebra</a></li>
-				<li><a href="#">Microprocesadores</a></li>
-				<li><a href="#">Bases de datos</a></li>
-                <li><a href="#">Sistemas operativos</a></li>
-                <li><a href="#">Ecuaciones diferenciales</a></li>
-			</ul>
+     <?php include('barralado.php'); ?>
 	 <!-- InstanceEndEditable -->
     </div>
     
-    <div id="footer">
-			<p><a href="#">Contacto</a></p>
-		</div>
+<?php include('footer.php'); ?>
         </div>
 </body>
 <!-- InstanceEnd --></html>

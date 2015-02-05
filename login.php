@@ -28,12 +28,12 @@
     <!-- InstanceBeginEditable name="EditRegion" -->
             <h2>Inicio de sesión</h2>
             <p>
-                <form action="index.html">
+                <form action="controller/logincontroller.php" method="POST">
                     <label for="user">Usuario: </label>
-                    <input type="text">
+                    <input type="text" name='username'>
                     <label for="pass">Contraseña: </label>
-                    <input type="password">
-                    <input type="submit">
+                    <input type="password" name="password">
+                    <input type="submit" value="iniciar sesión">
                 </form>
             </p>
             <!-- InstanceEndEditable -->
