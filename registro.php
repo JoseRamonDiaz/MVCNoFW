@@ -22,17 +22,17 @@
     <!-- InstanceBeginEditable name="EditRegion" -->
     <h2>Registro</h2>
     <p>
-    <form action="controller/registro.php" method="POST">
+    <form action="controller/registrocontroller.php" method="POST">
         <label for="name" >Nombre: </label>
         <input type="text" id="name" name="name" required>
          <label for="lastName" >Apellidos: </label>
-        <input type="text" id="lastName" name="lastname" required>
+        <input type="text" id="lastname" name="lastname" required>
          <label for="userName" >Nombre de usuario: </label>
-        <input type="text" id="userName" name="username" required>
+        <input type="text" id="user" name="user" required>
         <label for="pass" >Contraseña: </label>
-        <input type="text" id="pass" name="password" required>
+        <input type="password" id="pass" name="pass" required>
         <label for="mail" >Correo: </label>
-        <input type="text" id="mail" name="mail" required>
+        <input type="email" id="mail" name="mail" required>
         <label for="photo" >Foto de perfil: </label>
         <input type="submit" value="Registrarte">
     </form>
