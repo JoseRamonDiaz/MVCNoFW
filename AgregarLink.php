@@ -46,12 +46,13 @@
             <!-- InstanceEndEditable -->
     </div>
     <div id="right">
-     <!-- InstanceBeginEditable name="EditRegion1" -->EditRegion<!-- InstanceEndEditable -->
+     <!-- InstanceBeginEditable name="EditRegion1" -->
+     <?php include('barralado.php'); ?>
+     <!-- InstanceEndEditable -->
     </div>
     
-    <div id="footer">
-			<p><a href="#">Contacto</a></p>
-		</div>
+        <?php include('footer.php'); ?>
+		
         </div>
 </body>
 <!-- InstanceEnd --></html>

@@ -5,6 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+include('controller/sessionvalidateclose.php');
 include 'Mysql_connection.php';
 
 $link = $_GET["link"];
@@ -14,6 +15,6 @@ $query = "INSERT INTO enlaces (NombreEnlace,Materia_idMateria)
 VALUES ('$link', $Materia_idMateria)";
 
 $result = mysql_query($query, $dbhandle);
-header("Location: ../archivoGuardado.html");
+header("Location: ../archivoGuardado.php");
 exit;
 ?>

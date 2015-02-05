@@ -5,6 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+include('controller/sessionvalidateclose.php');
 include 'Mysql_connection.php';
 
 $tipo = $_POST["tipo"];
@@ -43,6 +44,6 @@ $query = "INSERT INTO apuntes (NombreApuntes, ArchivoApuntes, DescripcionApuntes
 VALUES ('$nombre', '$url', '$descripcion', $tipoBool, $idMaestro, $idMateria)";
 
 $result = mysql_query($query, $dbhandle);
-header("Location: ../archivoGuardado.html");
+header("Location: ../archivoGuardado.php");
 exit;
 ?>

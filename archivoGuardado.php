@@ -27,27 +27,16 @@
 		<div id="left">
     <!-- InstanceBeginEditable name="EditRegion" -->
     <h2>Guardado exitoso</h2>
-    <p><a href="index.html">Continuar</a></p>
+    <p><a href="index.php">Continuar</a></p>
             <!-- InstanceEndEditable -->
     </div>
     <div id="right">
      <!-- InstanceBeginEditable name="EditRegion1" -->
-        <h2>Materias</h2>
-			<ul>
-				<li><a href="#">Cálculo</a></li>
-				<li><a href="#">Sistemas distribuidos</a></li>
-				<li><a href="#">Álgebra</a></li>
-				<li><a href="#">Microprocesadores</a></li>
-				<li><a href="#">Bases de datos</a></li>
-                <li><a href="#">Sistemas operativos</a></li>
-                <li><a href="#">Ecuaciones diferenciales</a></li>
-			</ul>
+        <?php include('barralado.php'); ?>
         <!-- InstanceEndEditable -->
     </div>
     
-    <div id="footer">
-			<p><a href="#">Contacto</a></p>
-		</div>
+        <?php include('footer.php'); ?>
         </div>
 </body>
 <!-- InstanceEnd --></html>
