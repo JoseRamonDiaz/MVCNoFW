@@ -17,16 +17,7 @@
 
 <body>
 <div class="wrap">
-		<div id="logo">
-			<h1><a href="#" title="LIS FMAT">LIS FMAT</a></h1>
-			<p>Un espacio para compartir apuntes e información</p>
-		</div>
-  <ul id="nav">
-			<li><a class="current" href="#"><span class="akey">I</span>nicio</a></li>
-			<li><a href="#" ><span class="akey">P</span>rofesores</a></li>
-            <li><input type="text"><button>Buscar</button></li>
-		</ul>
-    </div>
+		<?php include('header.php'); ?>
     <div class="wrap">
 		<div id="left">
     <!-- InstanceBeginEditable name="EditRegion" -->
